@@ -314,7 +314,7 @@ $('#grid').addEventListener('click', e => {
   }
   if (!unlocked(d)) {
     c.classList.remove('shake'); void c.offsetWidth; c.classList.add('shake');
-    toast(G[d].e + ' ' + G[d].t + '… Patience, cette porte s\'ouvre le ' + (d===1?'1er':d) + ' décembre.');
+    toast(G[d].e + ' ' + G[d].t + '. Patience, cette porte s\'ouvre le ' + (d===1?'1er':d) + ' décembre.');
     return;
   }
   if (!opened.includes(d)) {
